@@ -1,0 +1,56 @@
+1.Display all records.
+   select * from store_sales;
+
+2.Show customer name, city and product purchased.
+   select customer_name, city ,product_name from store_sales;
+
+3.Find all customers from Delhi.
+
+   select *from store_sales where city='Delhi';
+
+4.Display all Electronics products.
+
+   select * from  store_sales where category='Electronics';
+
+5.Find sales greater than ₹30,000.
+
+    select * from store_sales where total_amount > '30000 ';
+
+6.Show customers aged above 30 years.
+    select * from store_sales where age >'30';
+
+7.Sort records by highest sale amount.
+    select * from store_sales order by total_amount desc ;
+
+8.Display the first 5 records.
+  select * from store_sales  limit 5;
+
+9.Find customers whose names start with 'R'.
+select * from store_sales  where customer_name like 'R%';
+
+10.Display all unique cities.
+select distinct  city from store_sales;
+
+11.Calculate total sales revenue.
+select sum(total_amount) as total_revenue from store_sales;
+
+12.Calculate average sales amount.
+select avg(total_amount) as  average_sales from store_sales;
+
+13.Find the maximum sale amount.
+select max(total_amount) as maximum_sales from store_sales;
+
+14.Find the minimum sale amount.
+select min(total_amount) as minimum_sales from store_sales;
+
+15.Count total orders.
+select count(*) as total_orders from store_sales;
+
+16.Display city-wise total sales.
+
+17.Display category-wise revenue.
+18.Display salesperson-wise revenue.
+19.Count orders by payment mode.
+20.Find customers who have placed more than one order.
+
+
